@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <h1 style="text-align:center">Please fill out the form below</h1>
+        <h3 style="font-style: italic;">General Information about Form:</h3>
+        <p>This form consists of 2 parts:</p>
+        <ol>
+            <li>
+                Information for login (name,surname,password)
+            </li>
+            <li>
+                Detailed information about you
+            </li>
+        </ol>
+        <hr>
+        <h2 style="text-align: center;">Information For Login</h2>
+        <h4>Please Type Your Name, Surname and Password</h4>
+        <ul>
+            <li>
+                <label for="name">Your Name:</label>
+                <br>
+                <input required type="text" name="name" id="name">
+            </li>
+            <br>
+            <li>
+                <label for="surname">Your Surname:</label>
+                <br>
+                <input required type="text" name="surname" id="surname">
+            </li>
+            <br>
+            <li>
+                <label for="password">Your Password:</label>
+                <br>
+                <input required type="password" name="password" id="password">
+            </li>
+        </ul>
+        <hr>
+        <h2 style="text-align: center;">Detailed Information About You</h2>
+        <h4>Please select your gender:</h4>
+
+        <img src="male.jpg" width="60px" height="65px" alt="">
+        <label for="s-male"></label>
+        <input required type="radio" name="sex" id="s-male" style="width: 60px;">
+
+        <br>
+
+        <img src="130-1306336_gender-symbol-female-female-gender-sign-clipart-hd.png" width="50px" height="65px" alt="">
+        <label for="s-female"></label>
+        <input required type="radio" name="sex" id="s-female" style="width: 80px;">
+
+
+        <h4>Please check your education degrees:</h4>
+        <ul>
+            <li>
+                <label for="associate">Associate Degree</label>
+                <input type="checkbox" id="associate">
+            </li>
+            <br>
+            <li>
+                <label for="bachelor">Bachelor's Degree</label>
+                <input type="checkbox" id="bachelor">
+            </li>
+            <br>
+            <li>
+                <label for="master">Master's Degree</label>
+                <input type="checkbox" id="master">
+            </li>
+            <br>
+            <li>
+                <label for="doctoral">Doctoral Degree</label>
+                <input type="checkbox" id="doctoral">
+            </li>
+        </ul>
+        <br>
+        <h4>Please enter your age, height and weight:</h4>
+        <ul>
+            <li>
+                <label for="age">Your Age:</label>
+                <input required min="0" type="number" id="age">
+            </li>
+            <br>
+            <li>
+                <label for="height">Height:</label>
+                <input required min="0" type="number" id="height">
+                <span>cm</span>
+            </li>
+            <br>
+            <li>
+                <label for="weight">Weight:</label>
+                <input required min="1" type="number" id="weight">
+                <span>kg</span>
+            </li>
+        </ul>
+        <p style="font-family: sans-serif; font-style: italic;">Thank you for your patiance,If you are sure,to confirm click the "SUBMIT".</p>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+</body>
+
+</html>
